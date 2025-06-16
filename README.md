@@ -131,7 +131,7 @@ This section outlines the core entities and relationships for the application da
 - Ensure fast loading times  
 - Prioritize mobile responsiveness  
 
-### Key Features
+### Feature Breakdown
 
 - Property search and filtering  
 - Detailed property viewing  
