@@ -131,12 +131,27 @@ This section outlines the core entities and relationships for the application da
 - Ensure fast loading times  
 - Prioritize mobile responsiveness  
 
-### Feature Breakdown
+## 🧩 Feature Breakdown
 
-- Property search and filtering  
-- Detailed property viewing  
-- Secure checkout process  
-- User authentication  
+This section outlines the core features of the AirBnB clone project and their roles within the platform.
+
+### 🔐 User Management
+Handles user registration, login, authentication, and role-based access control (e.g., host or guest). It ensures secure access and personalizes the user experience.
+
+### 🏠 Property Management
+Allows hosts to create, update, and delete property listings. Each property includes details like images, pricing, location, and description, enabling effective property discovery for users.
+
+### 📅 Booking System
+Enables guests to book available properties for specific dates. It handles date availability, prevents double bookings, and calculates total pricing for the stay.
+
+### 💳 Payment Processing
+Manages secure payment transactions for bookings. This ensures that users can complete bookings with confidence while maintaining transaction integrity.
+
+### ⭐ Review System
+Allows guests to leave ratings and feedback after a stay. This builds trust in the platform and helps future users make informed decisions based on past experiences.
+
+### 🔎 Property Search & Filtering
+Enables users to search and filter listings based on location, price, dates, and amenities. This enhances usability and ensures users can find suitable accommodations efficiently.
 
 ---
 
