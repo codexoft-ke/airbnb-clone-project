@@ -154,6 +154,35 @@ Allows guests to leave ratings and feedback after a stay. This builds trust in t
 Enables users to search and filter listings based on location, price, dates, and amenities. This enhances usability and ensures users can find suitable accommodations efficiently.
 
 ---
+## 🔐 API Security
+
+Securing the API is critical to ensure the protection of user data, prevent unauthorized access, and maintain the integrity of transactions. The following key security measures will be implemented in the project:
+
+### ✅ Authentication
+All API endpoints will require proper user authentication using methods such as JSON Web Tokens (JWT). This ensures that only verified users can access protected routes and perform actions like booking or modifying listings.
+
+**Why it matters:** Authentication prevents unauthorized users from accessing sensitive features and personal information.
+
+### ✅ Authorization
+Role-based access control (RBAC) will be used to determine what actions a user can perform based on their role (e.g., guest vs. host). Hosts can manage properties, while guests can only browse and book.
+
+**Why it matters:** Authorization ensures users can only perform actions that align with their privileges, reducing the risk of data manipulation.
+
+### ✅ Rate Limiting
+Rate limiting will be applied to API endpoints to prevent abuse, brute-force attacks, and ensure fair resource usage across the platform.
+
+**Why it matters:** Rate limiting helps protect the system from denial-of-service attacks and excessive traffic that could affect performance.
+
+### ✅ Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks such as SQL injection and cross-site scripting (XSS).
+
+**Why it matters:** Proper validation protects the database and frontend from malicious inputs that could compromise security.
+
+### ✅ Secure Payment Processing
+Payments will be handled through secure and encrypted channels using trusted third-party services. Sensitive information will never be stored directly on our servers.
+
+**Why it matters:** Ensuring payment security protects users from fraud and maintains trust in the platform.
+
 
 ## Primary Pages
 
