@@ -23,6 +23,58 @@ By completing this project, you will:
 - **Design Tools**: Figma for UI/UX design  
 
 ---
+## 🗄️ Database Design
+
+This section outlines the core entities and relationships for the application database.
+
+### 📘 Key Entities
+
+#### 1. Users
+- **id**: Unique identifier for the user
+- **name**: Full name of the user
+- **email**: User’s email address
+- **password**: Hashed password for authentication
+- **role**: Specifies if the user is a guest or host
+
+#### 2. Properties
+- **id**: Unique identifier for the property
+- **title**: Property name or listing title
+- **description**: Detailed information about the property
+- **location**: Address or coordinates of the property
+- **price_per_night**: Cost to book per night
+
+#### 3. Bookings
+- **id**: Unique identifier for the booking
+- **user_id**: References the user who made the booking
+- **property_id**: References the property being booked
+- **start_date**: Check-in date
+- **end_date**: Check-out date
+
+#### 4. Reviews
+- **id**: Unique identifier for the review
+- **user_id**: References the user who wrote the review
+- **property_id**: References the reviewed property
+- **rating**: Numeric score given by the user
+- **comment**: Textual feedback
+
+#### 5. Payments
+- **id**: Unique identifier for the payment
+- **booking_id**: References the booking being paid for
+- **user_id**: References the user who made the payment
+- **amount**: Payment amount
+- **payment_status**: Indicates success or failure
+
+---
+
+### 🔗 Entity Relationships
+
+- A **User** can create multiple **Properties** (if they are a host)
+- A **User** can make multiple **Bookings**
+- A **Property** can have multiple **Bookings**
+- A **Booking** is linked to one **Property** and one **User**
+- A **User** can write multiple **Reviews**
+- A **Review** is associated with one **User** and one **Property**
+- A **Payment** is linked to one **Booking** and one **User**
 
 ## Requirements
 
