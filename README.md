@@ -38,10 +38,19 @@ By completing this project, you will:
 - Analyze Figma design specifications  
 - Identify color schemes and typography  
 
-### Roles and Responsibilities
+## 🧑‍💻 Team Roles
 
-- Define team structure and responsibilities  
-- Document each role’s contribution to the project  
+| Role               | Description                                                                                                                                       |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Project Manager**  | Oversees the project timeline, coordinates the team, assigns tasks, and ensures deliverables meet deadlines and expectations.                    |
+| **Frontend Developers** | Responsible for implementing the UI components based on the design system, ensuring responsiveness, accessibility, and seamless user interactions. |
+| **Backend Developers** | Develop and maintain APIs, implement business logic, handle authentication and authorization, and ensure secure and efficient data handling.       |
+| **Designers**          | Create wireframes and high-fidelity mockups, define UI/UX standards, maintain visual consistency, and collaborate closely with frontend developers. |
+| **QA/Testers**         | Write and execute test cases (unit, integration, UI tests), report bugs, verify fixes, and ensure overall application quality before deployment.  |
+| **DevOps Engineers**   | Set up and manage CI/CD pipelines, automate deployments, handle infrastructure and server configurations, and ensure system reliability.          |
+| **Product Owner**      | Defines product requirements and acceptance criteria, prioritizes features and backlog items, and acts as a liaison between stakeholders and the team. |
+| **Scrum Master**       | Facilitates Agile ceremonies (stand-ups, sprint planning, retrospectives), helps remove blockers, and ensures that the team adheres to Agile practices. |
+
 
 ### UI Component Patterns
 
