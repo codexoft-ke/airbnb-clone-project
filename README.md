@@ -181,6 +181,28 @@ By completing this project, you will:
 - **Caching** using Redis  
 
 ---
+## 🧩 Feature Breakdown
+
+### 1. User Management  
+This feature allows users to register, log in, and manage their profiles securely. It ensures authentication through JWT tokens and supports role-based access for different types of users like guests, hosts, and admins.
+
+### 2. Property Management  
+Hosts can list properties by providing essential details like pricing, location, and images. They can also update or delete listings, making the platform dynamic and easy to manage for content creators.
+
+### 3. Booking System  
+Users can book available properties by selecting check-in and check-out dates. This feature includes booking validation, availability checks, and reservation storage to streamline the travel planning experience.
+
+### 4. Payment Processing  
+Secure payments are handled via a dedicated API that captures transaction details during booking. This feature simulates real-world checkout experiences and prepares the project for payment gateway integrations.
+
+### 5. Review System  
+Users can leave reviews and rate properties they’ve stayed in. This fosters trust and helps future users make informed booking decisions based on past guest experiences.
+
+### 6. Search and Filtering  
+Users can search properties by location, availability, and price range. This enhances usability by making it easy to discover relevant listings quickly.
+
+### 7. API Security  
+The project includes JWT-based authentication, rate limiting, role-based access control, and input sanitization. These measures ensure the safety of user data and protect the platform from malicious attacks.
 
 ## 🔐 API Security
 
