@@ -28,6 +28,94 @@ By completing this project, you will:
 - **Version Control:** Git & GitHub  
 
 ---
+## 🗄️ Database Design
+
+The project uses a relational database structure with clearly defined entities and relationships to ensure data integrity and efficient querying.
+
+### 🔹 Users  
+Represents people using the platform (guests, hosts, or admins).  
+**Important Fields:**  
+- `id` (Primary Key)  
+- `name`  
+- `email` (unique)  
+- `password` (hashed)  
+- `role` (guest, host, admin)  
+
+**Relationships:**  
+- A user can list multiple properties.  
+- A user can make multiple bookings.  
+- A user can write multiple reviews.
+
+---
+
+### 🔹 Properties  
+Represents accommodation listings created by hosts.  
+**Important Fields:**  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key – owner/host)  
+- `title`  
+- `location`  
+- `price_per_night`  
+
+**Relationships:**  
+- A property belongs to one user (host).  
+- A property can have multiple bookings.  
+- A property can have multiple reviews.
+
+---
+
+### 🔹 Bookings  
+Represents a reservation made by a user for a property.  
+**Important Fields:**  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key – guest)  
+- `property_id` (Foreign Key)  
+- `check_in_date`  
+- `check_out_date`  
+
+**Relationships:**  
+- A booking is made by one user.  
+- A booking belongs to one property.  
+- A booking may result in one payment.
+
+---
+
+### 🔹 Payments  
+Represents the financial transaction tied to a booking.  
+**Important Fields:**  
+- `id` (Primary Key)  
+- `booking_id` (Foreign Key)  
+- `amount`  
+- `status` (pending, completed, failed)  
+- `payment_method`  
+
+**Relationships:**  
+- A payment is associated with one booking.  
+- A booking can have one payment record.
+
+---
+
+### 🔹 Reviews  
+Represents feedback left by users after staying at a property.  
+**Important Fields:**  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key – guest)  
+- `property_id` (Foreign Key)  
+- `rating`  
+- `comment`  
+
+**Relationships:**  
+- A review is written by one user.  
+- A review belongs to one property.
+
+---
+
+### 🔗 Entity Relationships Summary  
+- A **User** can have many **Properties**, **Bookings**, and **Reviews**  
+- A **Property** belongs to a **User**, and can have many **Bookings** and **Reviews**  
+- A **Booking** belongs to a **User** and a **Property**, and is linked to one **Payment**  
+- A **Payment** is tied to one **Booking**  
+- A **Review** is linked to one **User** and one **Property**
 
 ## 📦 Project Requirements  
 
